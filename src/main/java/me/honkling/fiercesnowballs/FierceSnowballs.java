@@ -9,7 +9,7 @@ public final class FierceSnowballs extends JavaPlugin {
     @Override
     public void onEnable() {
         var pluginManager = Bukkit.getPluginManager();
-        pluginManager.registerEvents(new DamageListener(), this);
+        pluginManager.registerEvents(new SnowballListener(), this);
         instance = this;
 
         saveDefaultConfig();

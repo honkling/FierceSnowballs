@@ -1,1 +1,14 @@
 damage: 2 # Damage taken from snowball in half hearts
+
+critical:
+  chance: 10 # Chance of a critical hit. 0 or lower to disable critical hits
+  multiplier: 1.5 # Multiplier of damage when a critical hit is dealt
+
+trails:
+  enabled: true # Whether snowballs have particle trails
+  timer: 400 # 20 seconds (in ticks). Defines how long the snowball can exist before the trail stops displaying (for anti-lag purposes)
+  critical-trails: true # Whether a different trail for critical snowballs is displayed.
+
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+  normal-particle: END_ROD # Particle used for ordinary trails
+  critical-particle: VILLAGER_ANGRY # Particle used for critical trails
